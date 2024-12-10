@@ -27,7 +27,7 @@ const Editor = ({ defaultCode, defaultLang }: EditorProps) => {
   const uuidHandler = (uuid: string, savedCode: string) =>
     setShare((prev) => ({ ...prev, uuid, savedCode }));
 
-  const changeHandler = (value: string) => setCode(value);
+  const changeHandler = (value: string | undefined) => setCode(value!);
 
   return (
     <div
