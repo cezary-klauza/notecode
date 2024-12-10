@@ -30,9 +30,11 @@ To get a local copy up and running follow these steps.
 1. Node.js and npm/yarn installed.
 
 2. Clone the repository.
-   `bash
-git clone
-`
+
+   ```bash
+   git clone
+
+   ```
 
 3. Navigate to the project
    `bash
