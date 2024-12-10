@@ -1,20 +1,18 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   experimental: {
     turbo: {
       rules: {
-        test: ['/\.worker\.(js|ts)$/'],
+        test: ["/.worker.(js|ts)$/"],
         use: {
-          loaders: ['worker-loader']
-        }
-      }
-    }
+          loaders: ["worker-loader"],
+        },
+      },
+    },
   },
   webpack(config) {
     config.module.rules.push({
       test: /\.worker\.(js|ts)$/,
-      use: { loader: 'worker-loader' },
+      use: { loader: "worker-loader" },
     });
 
     return config;
