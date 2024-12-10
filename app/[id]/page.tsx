@@ -9,6 +9,8 @@ export default async function Page({
 }) {
   const id = (await params).id;
 
+  if (!id) redirect("/");
+
   const { data, error } = await supabase
     .from("code")
     .select("*")
