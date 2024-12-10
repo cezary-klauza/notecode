@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-
-const OutfitFont = Outfit({ weight: ["400", "600"] });
 
 export const metadata: Metadata = {
   title: "NoteCode",
@@ -17,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${OutfitFont.className} antialiased text-black`}>
+      <body className="antialiased text-black">
         <div className="relative bg-hero bg-no-repeat bg-cover lg:bg-contain min-[1500px]:bg-cover bg-top min-h-screen pt-8">
           <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 px-2">
             <Image
