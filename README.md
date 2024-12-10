@@ -2,6 +2,8 @@
 
 A modern, responsive code sharing app built with Next.js and Supabase.
 
+https://notecode-nu.vercel.app/
+
 ## About the Project
 
 This is a fully responsive code editor that allows you to edit 5 different programming languages. But that’s not all! It also lets you customize the style (light and dark modes) and share your code!
@@ -46,7 +48,7 @@ To get a local copy up and running follow these steps.
 1. Install all dependencies.
 
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 2. Set env.
