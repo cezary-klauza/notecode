@@ -37,16 +37,17 @@ To get a local copy up and running follow these steps.
    ```
 
 3. Navigate to the project
-   `bash
-cd notecode
-`
+   ```bash
+   cd notecode
+   ```
 
 ### Installation
 
 1. Install all dependencies.
-   `bash
-npm install
-`
+
+   ```bash
+   npm install
+   ```
 
 2. Set env.
 
@@ -54,9 +55,9 @@ npm install
    - Add variable SUPABASE_KEY
 
 3. Run the project.
-   `bash
-npm run dev
-`
+   ```bash
+   npm run dev
+   ```
 
 ## Built With
 
